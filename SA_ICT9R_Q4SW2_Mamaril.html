@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Q4 Seatwork 2</title>
+
+	<style type="text/css">
+
+		body{
+			background-image: url(Oven.png);
+			text-align: center;
+
+		}
+
+		h1 {
+			font-family: 'Gamja Flower', cursive;
+			text-align: center;
+			color: #1164ac;
+			font-size: 30px;
+
+
+		}
+
+		tr{
+
+			font-family: 'Gamja Flower', cursive;
+		}
+
+		th{
+			font-size: 25px;
+			color: ghostwhite;
+		}
+
+		p{
+			font-family: 'Gamja Flower', cursive;
+			font-size: 25px;
+
+		}
+		td{
+			font-size: 20px;
+		}
+
+		.container{
+    	position: absolute;
+    	top: 60%;
+  		left: 51.5%;
+  		right: 50%;
+  		transform: translate(-50%, -50%);
+        background-color: #fcfaf8;
+
+        width: 412px;
+ 		height: 300px;
+  	
+  		
+
+		}
+
+</style>
+
+</head>
+
+<body>
+<p id="today"></p>
+
+<script>
+const date = new Date(); 
+document.getElementById("today").innerHTML = date;
+</script>
+
+<div class="container">
+
+
+	<h1><b>Convert Fahrenheit to Celcius!</b></h1>
+	<br>
+
+	<p>
+  <label>Fahrenheit</label>
+  <input id="F" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="C"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("C").innerHTML=(valNum-32) * 5/9;
+}
+</script>
+
+<br>
+<br>
+<br>
+
+
+
+
+	<table width="100%">
+	<h1><b>FACTS!</b></h1>
+	<tr style="background-color: #1556b9;" style="color: ghostwhite;">
+		<th>Celcius:</th>
+		<th>Fahrenheit:</th>
+		<th>Description:</th>
+	</tr>
+
+	<tr style="color: black;">
+		<td>37</td>
+		<td>98.6</td>
+		<td>Average Body Temp.</td>
+	</tr>
+
+
+	<tr style="color: black;">
+		<td>21</td>
+		<td>69.8</td>
+		<td>Room Temp.</td>
+	</tr>
+
+
+	<tr style="color: black;">
+		<td>100</td>
+		<td>212.0</td>
+		<td>Boiling Point of Water </td>
+	</tr>
+
+
+	<tr style="color: black;">
+		<td>0</td>
+		<td>32.0</td>
+		<td>Freezing/Melting Point of Water </td>
+	</tr>
+
+
+	<tr style="color: black;">
+		<td>-273.15</td>
+		<td>-459.67</td>
+		<td>Absolute Zero Temp. </td>
+	</tr>
+
+
+
+
+
+</table>
+
+</div>
+
+
+
+
+
+
+	
+
+
+
+</table>
+
+  	<!-All elements from Canva
+
+ . 
+ Comments are not displayed in the browser-->
+</body>
+</html>
